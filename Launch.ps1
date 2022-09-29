@@ -7,10 +7,10 @@ if (Test-Path -Path "C:\Program Files (x86)\PaperCut MF Client\runtime\jre\bin\j
 }
 
 if (Test-Path -Path $path) {
-    $wshell.Popup("MC-Launcher.jar is already installed! Launching MC-Launcher.jar")
+    $wshell.Popup("MC-Launcher.jar is already installed! Click ok to launch MC-Launcher.jar")
 } else {
     Invoke-WebRequest -Uri "https://tlaun.ch/dl/mcl/jar" -OutFile $path
-    $wshell.Popup("Successfully installed MC-Launcher.jar! Launching MC-Launcher.jar")
+    $wshell.Popup("Successfully installed MC-Launcher.jar! Click ok to launch MC-Launcher.jar")
 }
 
 cd $javaPath
