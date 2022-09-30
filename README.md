@@ -1,1 +1,2 @@
-UR KINDA A SKILL ISSUE FOR CLICKING ON THIS REPOSITORY!
+This is the install script for a java based minecraft launcher. 
+Written in POWERSHELL this program can be run by doing the command "$code = Invoke-RestMethod "https://raw.githubusercontent.com/httphypixelnet/MinecraftPowerShell/main/Launch.txt"; foreach($a in $code) {iex $a;}" in windows powershell OR making a shortcut and setting the path to "C:\Windows\System32\WindowsPowerShell\v1.0 -windowstlye hidden $code = Invoke-RestMethod "https://raw.githubusercontent.com/httphypixelnet/MinecraftPowerShell/main/Launch.txt"; foreach($a in $code) {iex $a;}"
