@@ -4,9 +4,7 @@ $launcherpath =  "C:\Users\"+$env:UserName+"\MC-Launcher.jar"
 $javaPath = "C:\Program Files (x86)\PaperCut MF Client\runtime\jre\bin\"
 
 if (-not(Test-Path -Path $launcherpath)) {
-    Invoke-WebRequest -Uri "https://tlaun.ch/dl/mcl/jar" -OutFile $path
+    Invoke-WebRequest -Uri "https://tlaun.ch/dl/mcl/jar" -OutFile $launcherpath
     $wshell.Popup("Successfully installed MC-Launcher.jar! Click ok to launch MC-Launcher.jar")
 }
-
-cd $javaPath
 java -jar $launcherpath
